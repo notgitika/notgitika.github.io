@@ -1196,17 +1196,107 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="coursera_capstone">Project 2 Details</h5>
+                    <h5 class="modal-title" id="coursera_capstone">Battle of the Neighborhoods: IBM Data Science
+                        Professional Certificate Capstone Project</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <h2 style="text-align: center;">Genre Identifier from Song Audio File</h2>
-                    <h3 style="text-align: center;">2020</h3>
-                    <p> My team and I created a website using Flask that employed a machine learning model in the
-                        backend which analyzes audio files uploaded by the user to predict what genre they are based on
-                        their audio spectrum slices. </p>
+                    <h2 style="text-align: center;">Battle of the Neighborhoods: IBM Data Science Professional
+                        Certificate Capstone Project</h2>
+                    <h3 style="text-align: center;">2021</h3>
+                    <p> <strong> Introduction: </strong>
+                        The average person moves approximately 6 times in their lifetime. Almost everyone have
+                        experienced a period of searching for a new house. There are many different options and sources
+                        to search for, it's almost impossible for us to look one by one. Knowing that, how can we use
+                        data science to help us to find our new home?</p>
+                    <p> Since our job offer it is for a specific address, we have selected a few close neighborhoods to
+                        live in. Although we have selected these neighborhoods, still there are a lot of apartments for
+                        rent. We have a few exigences regarding the nearby venues, and that will be taken into account
+                        to choose our home. </p>
+
+                    <p>Based on definition of our problem, factors that will influence our decision are:
+                    <ul>
+                        <li>the apartment must have at least 2 bedrooms</li>
+                        <li> the monthly value of the rent cannot exceed R$ 1.700,00 </li>
+                        <li>it has to be at least 5km from workplace</li>
+                        <li>it has to be near at least 1km from a gym and a market</li>
+                        <li>social and economic characteristics of the neighborhod based on the available data</li>
+                    </ul>
+                    </p>
+
+
+
+                    <p>We will use our techniques in data science to generate the most promissing apartments for us to
+                        live in. Economic data and social characteristics of the neighborhoods will be considered in the
+                        proccess. </p>
+
+
+                    <p>This project is targeted to everyone that might be interested to know more about rent prices of
+                        apartments, statistics of the neighborhoods or just want to move to São Paulo, Brazil. </p>
+
+                    <p><strong>Methodology: </strong>
+                        In this project we have to find an apartment that fit our needs.
+
+                        In first step we have collected the required data: rental properties data, type (category) of
+                        every venue in a 1km radius from each neighborhood. We also have filtered every apartment in a
+                        5km radius from our workplace.
+
+                        In the second step we will be performing a exploratory data analysis in order to extract
+                        information about economic and social data of every neighborhood and perform a k-means to
+                        cluster the neighborhoods.
+
+                        We will calculate the distance through every selected venue (gyms and markets) to every
+                        apartment, in order to find out the nearest venue of each category to every apartment.
+
+                        Finally we will filter our dataset to fit our basic needs regarded as value of the rent,
+                        distance to the specific venues and number of bedrooms.</p>
+
+                    <p><strong>Code & Findings are on my Github:
+                        </strong><a
+                            href="https://github.com/notgitika/Coursera_Capstone/tree/master/Week%205"></a>https://github.com/notgitika/Coursera_Capstone/tree/master/Week%205
+                    </p>
+
+                    <p><strong> Visualizations: </strong> </p>
+                    <p>A map with the apartments that fit our profile and the nearest venues of each with a circle
+                        radius every 1km.</p>
+
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <img class="img-fluid" src="img/pic5.png" alt="SS1">
+                        </div>
+                    </div>
+                    </p>
+                    <p>
+                        A heatmap to see how our apartments are distributed in the csv file.
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <img class="img-fluid" src="img/pic2.png" alt="SS1">
+                        </div>
+                    </div>
+                    </p>
+
+                    <p><strong> Results: </strong> Our analysis show that although there are a great number of
+                        apartments (3.000) in our original dataset, just a few (17) fits our profile. Our first filter
+                        with the aim of get only apartments in a 5km radius for our workplace did not filter a lot of
+                        properties (100) and that's due we already had filtered the neighborhoods to scrape the data.
+
+                        The heatmpap show that there are clearly concentration of the apartments in the neighboorhods
+                        that we early filtered, resulting in a little bias in our results. To next projects we could
+                        consider get all neighborhoods in a 5km radius from our starting point.
+
+                        After we grouped the economic and social data of the neighborhoods, we clustered the
+                        neighborhoods into 5 groups. Apparently, the neighborhoods are very similar to each other,
+                        resulting in a high concentration in one of the groups (~64% of the neighborhoods).
+
+                        To find our potencial apartments, we applied the final filters regarded as number of bedrooms,
+                        minimum distance from specific venues and maximum monthly rent value. The filter were very
+                        effective, filtering approximately 99,4% of the results.
+
+                        To generate our final dataset, we grouped every apartment data with the information of the
+                        nearest venues of interest and the economical and social data of the neighborhood. This provided
+                        us with a broad view of the characteristics of each apartment and its surroundings.</p>
                 </div>
             </div>
         </div>
@@ -1358,6 +1448,12 @@
                 <div class="modal-body">
                     <h2 style="text-align: center;">Diffusion Adapters for Prior-Preserving Stylization</h2>
                     <h3 style="text-align: center;">2023</h3>
+
+
+                    <p>This is an ongoing project under the Image and Video Computing lab at Boston University with
+                        co-authors: Dina
+                        Bashkirova, Jiayi Shen, Arijit Ray, Dr. Ranjay Krishna, and Dr. Kate Saenko.</p>
+
                     <p> <strong>Abstract of the research project: </strong> State-of-the-art generative models achieve
                         remarkable expressivity and realism largely due to
                         their rich prior about the visual domain and language-based conditioning. Most applications of
@@ -1373,10 +1469,6 @@
                         separately learned concepts during inference. We illustrate capabilities of our method in
                         learning a specific object or style, and show that simple prompt-based approach is efficient for
                         disentangling style from other factors in a few and even a single example. </p>
-
-                    <p>This is an ongoing project under the Image and Video Computing lab at Boston University with
-                        co-authors: Dina
-                        Bashkirova, Jiayi Shen, Arijit Ray, Dr. Ranjay Krishna, and Dr. Kate Saenko.</p>
 
                     <p>A few examples of the inference outputs:
 
