@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gitika Jha - Portfolio & Blog</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn"
+        data-wow-delay="0.1s">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#skill" class="nav-item nav-link">Skills</a>
+                <a href="#skill" class="nav-item nav-link">Experience</a>
+
+
+            </div>
+            <div class="navbar-nav me-auto py-0">
+                <a href="#skill" class="nav-item nav-link">Education</a>
+                <a href="#project" class="nav-item nav-link">Projects</a>
+                <!-- <a href="#testimonial" class="nav-item nav-link">Blog</a> -->
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-light my-6 mt-0" id="home">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 py-6 pb-0 pt-lg-0">
+                    <h3 class="text-primary mb-3">I'm</h3>
+                    <h1 class="display-5 mb-4">Gitika Jha</h1>
+                    <h2 class="typed-text-output d-inline"></h2>
+                    <div class="typed-text d-none">CS Graduate Student, Data Scientist, Machine Learning Engineer</div>
+                    <div class="d-flex align-items-center pt-5">
+                        <a href="img/Gitika_Resume.pdf" class="btn btn-primary py-3 px-4 me-5 fw-bold">Résumé</a>
+                        <a href="https://medium.com/@gitijh" class="btn btn-primary py-3 px-4 me-5 fw-bold">Blog</a>
+                        <a href="https://www.linkedin.com/in/gitika-jha/"
+                            class="btn btn-primary py-3 px-4 me-5 fw-bold">Linkedin</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid" style="width: 750px;height: 750px;" src="img/profile.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <style>
+        .fixed-image {
+            width: 750px;
+            height: 750px;
+            object-fit: cover;
+        }
+    </style>
+
+
+    <!-- Video Modal Start -->
+    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
+                            allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- About Me Start -->
+    <div class="container-xxl py-6" id="about">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="display-5 mb-4">About Me</h1>
+
+                    <p>
+                        Hi there!
+
+                        Thanks for taking the time to view my page.
+
+                        I'm Gitika Jha, a grad student majoring in Computer Science at Boston University, and I did my
+                        undergrad
+                        education at the University of Mumbai. But let's not get lost in
+                        the formalities – I'm here to share a bit more about the real me!
+                    </p>
+
+                    <p>
+                        I'm on a quest to conquer the AI world. As a computer
+                        science enthusiast, I'm on a never-ending journey to explore the boundless possibilities of this
+                        tech universe. From tinkering with Computer Vision to diving deep into Natural Language
+                        Processing, I'm always up for a challenge. Lately, I've been digging into Generative AI, and
+                        it's been one thrilling ride!
+
+                    </p>
+
+                    <p>
+                        But it's not all about code and algorithms. I'm equally enthusiastic about data science. There's
+                        something magical about uncovering hidden gems within complex datasets. I get a kick out of
+                        using my technical wizardry to tease out insights and patterns.
+                    </p>
+
+                    <p>
+                        Diversity and inclusion are close to my heart. I firmly believe that everyone should have a seat
+                        at the tech table, no matter their background or identity. According to me, inclusivity isn't
+                        just a nice idea; it's a game-changer. It's what makes us stronger, more innovative, and more
+                        awesome.
+                    </p>
+
+                    <p>
+                        Some fun facts about me:
+                    <ul>
+                        <li>I love trivia! I binge watch 'Jeopardy!'' whenever I can, it is my new obsession</li>
+                        <li>Another activity I enjoy during my free time is watching movies; I'm a huge film geek</li>
+                        <li>Music is a constant companion. I'm trying to get back into playing the guitar again</li>
+                        <li>I can speak 5 languages! Additionally, while I cannot speak it well, I know the linguistics
+                            of an ancient
+                            language called Sanskrit</li>
+                    </ul>
+                    </p>
+
+
+                    <p>
+                        However, I'm more than just a tech geek. I'm a people person. Connecting with folks from all
+                        walks of life is, how my fellow Gen Z-ers put it, my jam. Whether it's a quick chat or a deep
+                        dive into the latest tech trends, I'm always up for a good conversation. So, don't be shy – hit
+                        me up!
+                    </p>
+                    <p>
+                        In a nutshell, I'm all about data, code, diversity, and making cool things happen. And I firmly
+                        believe that "whatever the mind can conceive and believe, it can achieve." I truly believe that
+                        technology has the power to revolutionalize the world (as it has been) and I desperately want to
+                        be a part of this movement. So, let's dream big and make it happen together!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Me End -->
+
+
+
+
+    <!-- Expertise Start -->
+    <div class="container-xxl py-6 pb-5" id="skill">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <!-- <h1 class="display-5 mb-5">Skills & Experience</h1>
+                    <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum
+                        amet diam ipsum clita dolor duo clita sit.</p> -->
+                    <h3 class="display-6 mb-4">My Technical Skills</h3>
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Python Technologies</h6>
+                                    <h6 class="font-weight-bold">95%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">SQL</h6>
+                                    <h6 class="font-weight-bold">90%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="90"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Research</h6>
+                                    <h6 class="font-weight-bold">90%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Machine Learning</h6>
+                                    <h6 class="font-weight-bold">80%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Data Engineering</h6>
+                                    <h6 class="font-weight-bold">80%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="80"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Full Stack Web Development</h6>
+                                    <h6 class="font-weight-bold">75%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="75"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
+                        <li class="nav-item w-50">
+                            <button class="nav-link w-100 py-3 fs-5 active fw-bold" data-bs-toggle="pill"
+                                href="#tab-1">Experience</button>
+                        </li>
+                        <li class="nav-item w-50">
+                            <button class="nav-link w-100 py-3 fs-5 fw-bold" data-bs-toggle="pill"
+                                href="#tab-2">Education</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <!-- <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row gy-5 gx-4">
+                                <div class="col-sm-6">
+                                    <h5>Research Assistant & Coordinator</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">Jun 2023 – Aug 2023</p>
+                                    <h6 class="mb-0">AI4ALL @ Boston University</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>Software Engineer & Analyst Intern </h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">May 2021 – Jan 2022</p>
+                                    <h6 class="mb-0">Indian Society for Technical Education </h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>App Development Intern</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">Dec 2019 – Jan 2020</p>
+                                    <h6 class="mb-0">C-Edge Technologies – Tata Consultancy Services & State Bank of
+                                        India </h6>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="tab-pane fade show p-0 active">
+                                        <h5>Research Assistant & Coordinator</h5>
+                                        <hr class="text-primary my-2">
+                                        <p class="text-primary mb-1">Jun 2023 – Aug 2023</p>
+                                        <h6 class="mb-0">AI4ALL @ Boston University</h6>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="tab-pane fade show p-0 active">
+                                        <h5>Software Engineer & Analyst Intern</h5>
+                                        <hr class="text-primary my-2">
+                                        <p class="text-primary mb-1">May 2021 – Jan 2022</p>
+                                        <h6 class="mb-0">Indian Society for Technical Education</h6>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="tab-pane fade show p-0 active">
+                                        <h5>App Development Intern</h5>
+                                        <hr class="text-primary my-2">
+                                        <p class="text-primary mb-1">Dec 2019 – Jan 2020</p>
+                                        <h6 class="mb-0">C-Edge Technologies: TCS & State Bank of
+                                            India</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row gy-5 gx-4">
+                                <div class="col-sm-6">
+                                    <h5>Master Of Science (M.S.) in Computer Science </h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">Sep 2022 - Dec 2023</p>
+                                    <h6 class="mb-0">Boston University</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>Bachelor of Technology in Information Technology </h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">Sep 2018 - May 2022</p>
+                                    <h6 class="mb-0">University of Mumbai</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Expertise End -->
+
+
+    <!-- Projects Start -->
+    <!-- <div class="container-xxl py-6 pt-5" id="project">
+        <div class="container">
+            <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0">My Projects</h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
+                        <li class="mx-3 active" data-filter="*">All Projects</li>
+                        <li class="mx-3" data-filter=".first">UI/UX Design</li>
+                        <li class="mx-3" data-filter=".second">Graphic Design</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-1.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-1.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-2.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-2.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-3.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-3.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-4.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-4.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-5.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-5.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/project-6.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-6.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Projects End -->
+
+    <!-- Projects Start -->
+
+    <!-- Include Bootstrap CSS and JavaScript -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Projects Start -->
+    <div class="container-xxl py-6 pt-5" id="project">
+        <div class="container">
+            <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0">My Projects</h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
+                        <li class="mx-3 active" data-filter="*">All Projects</li>
+                        <li class="mx-3" data-filter=".swe">Software Development</li>
+                        <li class="mx-3" data-filter=".ml">Machine Learning</li>
+                        <li class="mx-3" data-filter=".ds">Data Science</li>
+                        <li class="mx-3" data-filter=".misc">Miscellaneous</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
+
+                <div class="col-lg-4 col-md-6 portfolio-item ml">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <a href="#" data-toggle="modal" data-target="#personalization">
+                            <img class="img-fluid" src="img/personalization_main.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- <div class="col-lg-4 col-md-6 portfolio-item ds">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <a href="#" data-toggle="modal" data-target="#board_games">
+                            <img class="img-fluid" src="img/board_games_main.png" alt="">
+                        </a>
+                    </div>
+                </div> -->
+
+                <div class="col-lg-4 col-md-6 portfolio-item ml">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <a href="#" data-toggle="modal" data-target="#atfal_mafkoda">
+                            <img class="img-fluid" src="img/Atfal_Makfoda_Main.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item ds">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <a href="#" data-toggle="modal" data-target="#cfjj">
+                            <img class="img-fluid" src="img/cfjj_main.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item ml">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <a href="#" data-toggle="modal" data-target="#originality_score">
+                            <img class="img-fluid" src="img/Originality_score.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item ml">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <a href="#" data-toggle="modal" data-target="#language_tutor">
+                            <img class="img-fluid" src="img/Language_Tutor_main.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item swe">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <a href="#" data-toggle="modal" data-target="#iste">
+                            <img class="img-fluid" src="img/ISTE_Portal_Main.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item ds">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <a href="#" data-toggle="modal" data-target="#coursera_capstone">
+                            <img class="img-fluid" src="img/coursera_main.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item ml">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <a href="#" data-toggle="modal" data-target="#breast_cancer">
+                            <img class="img-fluid" src="img/breast_cancer_main.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item swe">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <a href="#" data-toggle="modal" data-target="#sc_website">
+                            <img class="img-fluid" src="img/sc_website_main.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item misc">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <a href="#" data-toggle="modal" data-target="#sudoku_solver">
+                            <img class="img-fluid" src="img/Sudoku_solver_main.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item misc">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <a href="#" data-toggle="modal" data-target="#line_bot">
+                            <img class="img-fluid" src="img/line_following_main.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item ml">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <a href="#" data-toggle="modal" data-target="#genre_identifier">
+                            <img class="img-fluid" src="img/Genre_identifier_main.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item swe">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <a href="#" data-toggle="modal" data-target="#sahara">
+                            <img class="img-fluid" src="img/Sahara_website_main.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item swe">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <a href="#" data-toggle="modal" data-target="#cropvet">
+                            <img class="img-fluid" src="img/Project_Cropvet_Main.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Projects End -->
+
+    <!-- Define modals for each project -->
+    <div class="modal fade" id="cropvet" tabindex="-1" role="dialog" aria-labelledby="cropvet" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cropvet">Website Development a Socio-Economic NGO - Cropvet</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2 style="text-align: center;">Website Development for an NGO</h2>
+                    <h3 style="text-align: center;">2020</h3>
+                    <p> Below are some sample pictures from our deployment for the website template we created for
+                        Cropvet Agro Pvt Ltd. It is an NGO Rural Development Organization for empowering the rural
+                        population and enhancing their income. It promotes entrepreneurship for the youth in rural areas
+                        of India, helping them socially, economically, and financially. The sample deployment is
+                        unfortunately not available anymore.</p>
+
+                    <p><strong>Tech Stack used:</strong></p>
+                    <ul>
+                        <li>Flask</li>
+                        <li>SQLAlchemy</li>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                        <li>Javascript</li>
+                        <li>MySQL</li>
+                        <li>XAMPP</li>
+                    </ul>
+
+                    <p><strong>Github link:</strong> <a
+                            href="https://github.com/notgitika/website-for-mini-project">https://github.com/notgitika/website-for-mini-project</a>
+                    </p>
+
+                    <p><strong>Letter of Appreciation by the CEO:</strong></p>
+
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <img class="img-fluid" src="img/cropvet_lor.png" alt="Appreciation Letter 1">
+                        </div>
+                    </div>
+                    <p><strong>Snapshots from the website</strong></p>
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <img class="img-fluid" src="img/ss1.png" alt="Screenshot 1">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <img class="img-fluid" src="img/ss2.png" alt="Screenshot 2">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <img class="img-fluid" src="img/ss3.png" alt="Screenshot 3">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sahara" tabindex="-1" role="dialog" aria-labelledby="sahara" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sahara">Website Development for Sahaara Foundation</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- <div class="modal-body">
+                    Website Development for Sahaara Foundation - An NGO for Rehabilitiation Services
+                </div> -->
+
+                <div class="modal-body">
+                    <h2 style="text-align: center;">Website Development for Sahaara Foundation - An NGO for
+                        Rehabilitiation Services</h2>
+                    <h3 style="text-align: center;">2020</h3>
+                    <p> Another website made by an NGO that is Rehabilitiation center for addicts and mental health
+                        patients. They reached out to us to revamp their website. </p>
+
+                    <p><strong>Tech Stack used:</strong></p>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                        <li>Javascript</li>
+                    </ul>
+
+                    <p><strong>Github link:</strong> <a
+                            href="https://github.com/manshri99/Sahara-Foundation">https://github.com/manshri99/Sahara-Foundation</a>
+                    </p>
+
+                    <p><strong>Snapshots from the website</strong></p>
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <img class="img-fluid" src="img/sahaara1.png" alt="Screenshot 1">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <img class="img-fluid" src="img/sahaara2.png" alt="Screenshot 2">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <img class="img-fluid" src="img/sahaara3.png" alt="Screenshot 3">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <img class="img-fluid" src="img/sahaara4.png" alt="Screenshot 4">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="genre_identifier" tabindex="-1" role="dialog" aria-labelledby="genre_identifier"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="genre_identifier">Genre Identifier from Song Audio File</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2 style="text-align: center;">Genre Identifier from Song Audio File</h2>
+                    <h3 style="text-align: center;">2020</h3>
+                    <p> My team and I created a website using Flask that employed a machine learning model in the
+                        backend which analyzes audio files uploaded by the user to predict what genre they are based on
+                        their audio spectrum slices. </p>
+
+                    <p><strong>Introduction:</strong></p>
+                    <ul>
+
+                        <li>With the current state of music and influence of the internet, music from all parts of the
+                            globe is consumed by people which makes music very diverse.</li>
+                        <li>This makes it harder to categorize an artist or song under one specific genre as most new
+                            music is usually a blend of multiple influences from diverse sources. </li>
+                        <li>Music genre classification is, as described ahead, an ambiguous and subjective task. It is
+                            also an area of research that is being contested, either for low classification accuracy
+                            or because some say that one is not able to classify genres that do not even have clear
+                            definitions</li>
+                        <li>So we have attempted at making a genre identifier with an accuracy of approximately 82%.
+                        </li>
+                    </ul>
+
+                    <p><strong>Project Workflow:</strong></p>
+                    <ul>
+
+                        <li>In this web application, the homepage has a choose audio file button which lets us choose
+                            files to insert a song for the model to identify its genre.</li>
+                        <li>The inserted audio file is separated into small slices and each slice is assigned a genre
+                            after analyzing them from a CNN (Convolutional Neural Network) model. The final genre is
+                            decided from a majority voting system.
+                        </li>
+                        <li>This application supports various audio formats which makes it more accessible for various
+                            users. The more popular examples of audio formats supported are MP3 format, WMA format, WAV
+                            format.</li>
+                        <li>We mainly used audio processing libraries like librosa and ffmpeg which are available in
+                            python.
+                        </li>
+                        <li>We used Python Flask as the web application framework which connects to the CNN model to
+                            give us the results of our query.
+                        </li>
+                    </ul>
+
+                    <p><strong>Dataset:</strong></p>
+                    <ul>
+
+                        <li>We used the famous GTZAN dataset for our web application. The dataset consists of 1000
+                            audio tracks, each 30 seconds long. It contains 10 genres, each genre consisting of 100
+                            sound clips. All the tracks are 22050 Hz Mono 16-bit audio files in .au format.
+
+                        </li>
+                        <li>Currently the genres provided in this dataset are:
+                            <ul>
+                                <li>Blues</li>
+                                <li>Classical</li>
+                                <li>Country</li>
+                                <li>Disco</li>
+                                <li>HipHop</li>
+                                <li>Jazz</li>
+                                <li>Metal</li>
+                                <li>Pop</li>
+                                <li>Reggae</li>
+                                <li>Rock</li>
+                            </ul>
+
+                        </li>
+                        <li>This application supports various audio formats which makes it more accessible for various
+                            users. The more popular examples of audio formats supported are MP3 format, WMA format, WAV
+                            format.</li>
+                        <li>We mainly used audio processing libraries like librosa and ffmpeg which are available in
+                            python.
+                        </li>
+                        <li>We used Python Flask as the web application framework which connects to the CNN model to
+                            give us the results of our query.
+                        </li>
+                    </ul>
+
+                    <p><strong>Preprocessing the Data:</strong></p>
+                    <ul>
+
+                        <li>We first split a song into multiple songs using overlapping windows.
+
+                        </li>
+                        <li>Then, we convert the list of songs to a np array of mel spectrograms.</li>
+                        <li> We read the data and feed it into our CNN model. We improve the model by using global
+                            pooling and MLP (Multilayer perceptron).
+                        </li>
+                        <li>Data is trained and we get val loss = 0.964 and val accuracy = 0.722. The accuracy and loss
+                            graphs are attached henceforth.
+
+                        </li>
+                        <div class="row">
+                            <div class="col-lg-10 mx-auto">
+                                <img class="img-fluid" src="img/genre1.png" alt="Screenshot 1">
+                            </div>
+                        </div>
+                        <li>Confusion Matrix:
+
+                        </li>
+                        <div class="row">
+                            <div class="col-lg-10 mx-auto">
+                                <img class="img-fluid" src="img/genre2.png" alt="Screenshot 2">
+                            </div>
+                        </div>
+
+                        <li>We can observe that the genres most likely to be mislabeled are - jazz, country, blues &
+                            rock.</li>
+                        <li>The pairs most likely to be confused as each other are - jazz-country, country-rock,
+                            blues-country, metal-rock and blues-rock.
+                        </li>
+                        <li>From the majority voting system, we get an average accuracy of 82%.
+                        </li>
+                    </ul>
+
+
+                    <p><strong>Tech Stack used:</strong></p>
+                    <ul>
+                        <li>Python 3.7.6</li>
+                        <li>Tensorflow 1.14.0</li>
+                        <li>Keras 2.3.1</li>
+                        <li>Librosa 0.6.3</li>
+                        <li>Ffmpeg 1.4</li>
+                        <li>Numpy 1.18.1</li>
+                        <li>Pandas 1.0.1 </li>
+                        <li>Matplotlib 3.1.3</li>
+                        <li>Scikit-learn 0.22.1</li>
+                        <li>Flask 1.1.1</li>
+
+                        <li>JavaScript</li>
+                        <li>HTML 5</li>
+                        <li>CSS 3</li>
+                        <li>BOOTSTRAP 4</li>
+
+                    </ul>
+
+                    <p><strong>Github link:</strong> <a
+                            href="https://github.com/vedant-manelkar/Genre-Identifier">https://github.com/vedant-manelkar/Genre-Identifier</a>
+                    </p>
+
+                    <p><strong>Snapshots from the website</strong></p>
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <img class="img-fluid" src="img/genre3.png" alt="Appreciation Letter 2">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <img class="img-fluid" src="img/genre4.png" alt="Appreciation Letter 3">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <img class="img-fluid" src="img/genre5.png" alt="Appreciation Letter 4">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <img class="img-fluid" src="img/genre6.png" alt="Appreciation Letter 4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="genre_identifier" tabindex="-1" role="dialog" aria-labelledby="genre_identifier"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="genre_identifier">Project 2 Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Add your project details here for Project 2 -->
+                    Lorem Ipsum for Project 2.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="iste" tabindex="-1" role="dialog" aria-labelledby="iste" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="iste">Project 2 Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2 style="text-align: center;">Genre Identifier from Song Audio File</h2>
+                    <h3 style="text-align: center;">2020</h3>
+                    <p> My team and I created a website using Flask that employed a machine learning model in the
+                        backend which analyzes audio files uploaded by the user to predict what genre they are based on
+                        their audio spectrum slices. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="language_tutor" tabindex="-1" role="dialog" aria-labelledby="language_tutor"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="language_tutor">Personalized Language tutor using GPT-3.5</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2 style="text-align: center;">Personalized Language tutor using GPT-3</h2>
+                    <h3 style="text-align: center;">2023</h3>
+                    <p> I had developed this project for the AI4ALL '23 batch during my summer internship. My goal was
+                        to introduce the world of AI and NLP to the young women in high schools. </p>
+                    <p>The Personalized Language Tutor project leverages the power of OpenAI's GPT-3.5 model to create
+                        an interactive and dynamic language learning experience. The project is structured to guide
+                        learners through translating sentences, providing detailed explanations, and engaging in
+                        conversational practice, all powered by the capabilities of GPT-3.5.</p>
+                    <div style="text-align: center;">
+                        <img src="https://media2.giphy.com/media/mNfvtK90scVTF20Jye/giphy.gif?cid=ecf05e47nabgmejh8i8p27zix9xci6ndhjuwjwgfy3ko9wnv&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+                            alt="GPT-3 Powered Language Tutor">
+                    </div>
+                    <p><strong>Features:</strong>
+                    <ol>
+                        <li>Translation Module:</li>
+                        <ul>
+                            <li>Learn to translate sentences from one language to another using GPT-3.5.</li>
+                            <li>
+                                Explore the use of GPT-3 model API calls to automatically detect the source language
+                                without explicit user input.</li>
+
+                        </ul>
+
+                        <li>Explanation Module:</li>
+                        <ul>
+                            <li>Gain insights into sentence structures and meanings through detailed explanations.
+                            </li>
+                            <li>
+                                Encourage learners to actively participate by independently discovering methods for
+                                utilizing GPT-3 API calls.</li>
+                        </ul>
+
+                        <li>Practice Conversation Module:</li>
+                        <ul>
+                            <li>Engage in conversational practice with the GPT-3 powered chatbot.
+                            </li>
+                            <li>
+                                Utilize few-shot learning techniques, comparing performance 'before' and 'after' to
+                                highlight the effectiveness of this approach.
+                            </li>
+                        </ul>
+
+                    </ol>
+
+                    <p>The Personalized Language Tutor project not only introduces learners to the capabilities of
+                        GPT-3.5 but also guides them through the process of building a practical language learning
+                        tool.
+                        The combination of structured modules, interactive tasks, and advanced techniques like
+                        few-shot
+                        learning ensures a comprehensive and engaging learning experience.</p>
+
+                    <p>
+                        The code implementation is available in the Jupyter Notebook at my <a
+                            href="https://github.com/notgitika/language-tutor-chatbot-gpt3.5/blob/main/starter_code.ipynb">Github
+                            Repository</a>, guiding
+                        learners through the development of each function and the integration of the complete
+                        language tutor chatbot.
+                    </p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="originality_score" tabindex="-1" role="dialog" aria-labelledby="Originality_score"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Originality_score">Originality Score: Is a document written by AI? </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2 style="text-align: center;">Originality Score: Is a document written by AI?</h2>
+                    <h3 style="text-align: center;">2023</h3>
+
+                    <p><strong><a href="https://drive.google.com/file/d/15FBw3p3SWxiH4_2_5YQvY_m26mNnFWXE/view">Project
+                                Report</a></strong></p>
+
+                    <p><strong>Project
+                            Repo on Github:</strong><a
+                            href="https://github.com/smritae01/CS640-Originality-Score-Project">
+                            https://github.com/smritae01/CS640-Originality-Score-Project
+                        </a>
+                    </p>
+                    <p> The advent of Large Language Models and Neural Networks to generate human-like texts and
+                        responses has made a lasting impact on how AI will play a considerable role in automating
+                        several corporate and academic environments. Our project intends to evaluate the measure of how
+                        original a given text is and possibly classify it as AI or Human-written.
+
+                        Currently, ChatGPT [OpenAI, 2022] has the best performance among the tools in the market in
+                        terms of generating coherent and persuasive answers. This is the reason it has one of the
+                        fastest growing user bases. While it can be used as a tool to assist in all kinds of work, there
+                        has been a rapid increase in its misuse. This has made it imperative to include some
+                        AI-generated results detectors to counter the growing misuse of the technology.
+
+                        The primary goal of this project is to use DetectGPT, GPTZero, and OpenAI to create a model that
+                        formulates an Originality Score that is a cumulative result of the above models on the selected
+                        text datasets (obtained from a combination of human-written and ChatGPT-generated texts), thus
+                        enabling us to form better conclusions as to how similar the texts generated by the AI language
+                        model are to actual human ones.</p>
+
+                    <p>Our pipeline looked like:</p>
+
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <img class="img-fluid" src="img/og.jpg" alt="Screenshot 1">
+                        </div>
+                    </div>
+
+                    <p>
+                        Our project centers on developing a model that can produce the originality scores of texts,
+                        including the outputs of Large Language Models (LLMs) by combining AI detector results with LLM
+                        outputs as features. We shall use various detectors, including DetectGPT, GPTZero, and OpenAI to
+                        produce verdicts and measures that contribute to a specific verdict (Human or AI generated).
+
+                        The dataset used was the GPT-wiki-intro Dataset
+
+                        Features extracted from the dataset were : Average Perplexity, Burstiness, Completely Generated
+                        Probability, z-score and a range of accuracy outputs from the Open AI Classifier.
+
+                        The tasks defined for the project were as follows:
+                    <ul>
+                        <li>Classification task - using a Multi-layer Perceptron model classifying data into
+                            human-generated
+                            or machine-generated.</li>
+                        <li>Weight Generation Task - to generate weights for each classifier to be learned by the model.
+                        </li>
+                        <li>Originality Score Generation - the final desired outcome, a number between 0 to 1 indicating
+                            the
+                            chance a text was generated by an AI model.</li>
+                    </ul>
+
+
+
+
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sudoku_solver" tabindex="-1" role="dialog" aria-labelledby="sudoku_solver"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sudoku_solver">Sudoku Solver using Python and Pygame</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2 style="text-align: center;">Sudoku Solver using Python and Pygame</h2>
+                    <h3 style="text-align: center;">2020</h3>
+                    <p>
+                        This project's core functionality involves employing a Sudoku-solving algorithm, a backtracking
+                        algorithm, to systematically fill in the puzzle's grid while adhering to the rules of the game.
+                    </p>
+                    <p>
+                        As someone who enjoys solving Sudoku puzzles a lot, I made this program keeping simplicity in
+                        mind and with the goal of learning about the backtracking algorithm.
+                    </p>
+                    </p>
+                    Key components of the project include designing an intuitive GUI for user interaction,
+                    implementing the Sudoku-solving algorithm, and integrating these elements seamlessly using
+                    Python and Pygame.
+                    </p>
+                    <p> <strong> Link to the github repo for the project: </strong>
+                        <a
+                            href="https://github.com/notgitika/sudoku-solver">https://github.com/notgitika/sudoku-solver</a>
+
+                        <!-- </strong> -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="line_bot" tabindex="-1" role="dialog" aria-labelledby="line_bot" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="line_bot">Line Following Bot using Webots</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <h2 style="text-align: center;">Line Following Bot using Webots</h2>
+                    <h3 style="text-align: center;">2021</h3>
+                    <p>
+
+                        In this project, a robot equipped with sensors and actuators is programmed to autonomously
+                        follow a
+                        predefined path marked by a line. Webots, a powerful robot simulation software, serves as the
+                        virtual environment for testing and refining the robot's capabilities.
+
+                    </p>
+                    <p>
+                        Key components of the project include sensor integration, algorithm development for line
+                        detection
+                        and following, and the implementation of control strategies to ensure precise and efficient
+                        navigation.
+                    </p>
+
+                    <p> <strong> Link to the github repo for the project: </strong>
+                        <a
+                            href="https://github.com/notgitika/line-following-bot">https://github.com/notgitika/line-following-bot</a>
+
+
+                        <!-- </strong> -->
+                    </p>
+
+                    <p>
+
+                        <strong>Video demo of the simulation: </strong>
+
+                    <div style="text-align: center;">
+                        <video width="640" height="360" controls style="display: inline-block;">
+                            <source src="img/Demo.mp4" type="video/mp4">
+                            Your browser does not support the video element.
+                        </video>
+                    </div>
+
+                    </p>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="coursera_capstone" tabindex="-1" role="dialog" aria-labelledby="coursera_capstone"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="coursera_capstone">Project 2 Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2 style="text-align: center;">Genre Identifier from Song Audio File</h2>
+                    <h3 style="text-align: center;">2020</h3>
+                    <p> My team and I created a website using Flask that employed a machine learning model in the
+                        backend which analyzes audio files uploaded by the user to predict what genre they are based on
+                        their audio spectrum slices. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="board_games" tabindex="-1" role="dialog" aria-labelledby="board_games"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="board_games">Project 2 Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Add your project details here for Project 2 -->
+                    Lorem Ipsum for Project 2.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="breast_cancer" tabindex="-1" role="dialog" aria-labelledby="breast_cancer"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="breast_cancer">Self-Supervised Learning for Breast Cancer Image Analysis
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2 style="text-align: center;">Self-Supervised Learning for Breast Cancer Image Analysis</h2>
+                    <h3 style="text-align: center;">2022</h3>
+                    <p> My team and I worked on this Machine Learning research project as a part of my undergraduate
+                        major project under the Head of Department of Information Technology at KJSIT, Dr. Radhika
+                        Kotecha. </p>
+                    <p> We published it in Taylor & Francis as a chapter in the book 'Explainable AI in Healthcare' on
+                        July 2023. I was the first author of this research paper.</p>
+
+                    <p>https://github.com/vedant-manelkar/Project_LY_Group_10</p>
+
+                    <p><strong>Snapshot from Taylor & Francis publication page</strong></p>
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <img class="img-fluid" src="img/bc1.png" alt="Publication screenshot">
+                        </div>
+                    </div>
+                    <p><strong>Abstract:</strong></p>
+                    <p>Breast cancer, being among the most widespread terminal illnesses, has the potential to claim the
+                        lives of thousands of people each year. Machine learning approaches have shown promise in the
+                        biomedical field because of recent advances. However, real-time medical data are hard to obtain,
+                        and the number of samples is generally small or unannotated for traditional machine learning
+                        approaches to make accurate predictions. The proposed approach uses self-supervised learning to
+                        overcome this challenge. Since this model works with unlabeled data and can be downstream from
+                        any standard dataset, the proposed approach does not need large labeled datasets. The
+                        open-source datasets Mammographic Image Analysis Society (MIAS), Digital Database for Screening
+                        Mammography (DDSM), and INbreast are used, and samples are arbitrarily selected from them to
+                        make a smaller randomized dataset. An accuracy of 96.7% is achieved using bring your own latent
+                        (BYOL) as a pretext task on Resnet18 architecture. This chapter demonstrates that the proposed
+                        approach surpasses the contemporary state-of-the-art supervised learning methods for breast
+                        cancer detection without compromising accuracy. For deep learning models to be used in crucial
+                        fields, they should be reliable, and the output should be made in an interpretable manner to
+                        understand the reasoning behind a decision made by the model. For this reason, this chapter
+                        further demonstrates explainability for deep learning architectures through the use of saliency
+                        maps. This approach has the potential to avoid misdiagnosis and assist medical practitioners in
+                        turn, saving innumerable precious lives.</p>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sc_website" tabindex="-1" role="dialog" aria-labelledby="sc_website" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sc_website">KJSIT Students' Council Website Development</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2 style="text-align: center;">KJSIT Students' Council Website Development</h2>
+                    <h3 style="text-align: center;">2021</h3>
+                    <p> I led the creation of the <a href="https://sc.kjsieit.in/Home/index.html">website</a> while I
+                        was the president of the Students' Council at my undergraduate institution.
+                    </p>
+                    <p>The tech stack used was:
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>PHP</li>
+                        <li>Vanilla JavaScript</li>
+                    </ul>
+
+                    <p>
+                        Here is a link to the github repository (private): <a
+                            href="https://github.com/notgitika/sc-kjsieit-website">https://github.com/notgitika/sc-kjsieit-website</a>
+                    </p>
+
+                    <p>Some screenshots from the website:
+
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <img class="img-fluid" src="img/sc1.png" alt="Screenshot 1">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <img class="img-fluid" src="img/sc2.png" alt="Screenshot 2">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <img class="img-fluid" src="img/sc3.png" alt="Screenshot 3">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <img class="img-fluid" src="img/sc4.png" alt="Screenshot 4">
+                        </div>
+                    </div>
+
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="personalization" tabindex="-1" role="dialog" aria-labelledby="personalization"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="personalization">Diffusion Adapters for Prior-Preserving Stylization
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2 style="text-align: center;">Diffusion Adapters for Prior-Preserving Stylization</h2>
+                    <h3 style="text-align: center;">2023</h3>
+                    <p> <strong>Abstract of the research project: </strong> State-of-the-art generative models achieve
+                        remarkable expressivity and realism largely due to
+                        their rich prior about the visual domain and language-based conditioning. Most applications of
+                        image generation require personalization, i.e. ability to adapt to a specific concept or style,
+                        with only a few ground truth examples. Existing diffusion-based concept learning methods either
+                        require finetuning the entire generator for a single concept which is largely impractical, or
+                        propose adaptation in the language space, which results in inaccurate concept representation. In
+                        this paper, we propose this novel method, a simple yet effective adaptor-based approach for
+                        concept
+                        learning. We show that our method achieves accurate concept representation on par with the
+                        methods that finetune the entire generator while preserving the prior of the original model, is
+                        significantly more accurate than the language-based adaptors, and allows composition of
+                        separately learned concepts during inference. We illustrate capabilities of our method in
+                        learning a specific object or style, and show that simple prompt-based approach is efficient for
+                        disentangling style from other factors in a few and even a single example. </p>
+
+                    <p>This is an ongoing project under the Image and Video Computing lab at Boston University with
+                        co-authors: Dina
+                        Bashkirova, Jiayi Shen, Arijit Ray, Dr. Ranjay Krishna, and Dr. Kate Saenko.</p>
+
+                    <p>A few examples of the inference outputs:
+
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <img class="img-fluid" src="img/personalization1.png" alt="Screenshot 1">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <img class="img-fluid" src="img/personalization2.png" alt="Screenshot 2">
+                        </div>
+                    </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="cfjj" tabindex="-1" role="dialog" aria-labelledby="cfjj" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cfjj">Project 2 Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2 style="text-align: center;">Genre Identifier from Song Audio File</h2>
+                    <h3 style="text-align: center;">2020</h3>
+                    <p> My team and I created a website using Flask that employed a machine learning model in the
+                        backend which analyzes audio files uploaded by the user to predict what genre they are based on
+                        their audio spectrum slices. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects End -->
+
+    <!-- <iframe src="https://medium.com/@gitijh" width="100%" height="500px"></iframe> -->
+
+
+
+    <!-- Courses Start -->
+    <!-- <div class="container-fluid bg-light my-5 py-6" id="service">
+        <div class="container">
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0">Courses</h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <a class="btn btn-primary py-3 px-5" href="">Hire Me</a>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-crop-alt fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Creative Design</h4>
+                            <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6>
+                            <span>Stet lorem dolor diam amet vero eos. No stet est diam amet diam ipsum. Clita dolor duo
+                                clita sit sed sit dolor eos.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-code-branch fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Graphic Design</h4>
+                            <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6>
+                            <span>Stet lorem dolor diam amet vero eos. No stet est diam amet diam ipsum. Clita dolor duo
+                                clita sit sed sit dolor eos.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-code fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Web Design</h4>
+                            <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6>
+                            <span>Stet lorem dolor diam amet vero eos. No stet est diam amet diam ipsum. Clita dolor duo
+                                clita sit sed sit dolor eos.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-laptop-code fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">UI/UX Design</h4>
+                            <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6>
+                            <span>Stet lorem dolor diam amet vero eos. No stet est diam amet diam ipsum. Clita dolor duo
+                                clita sit sed sit dolor eos.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Service End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-xxl pb-5" id="contact">
+        <div class="container py-5">
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0">Reach out to me!</h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <!-- <a class="btn btn-primary py-3 px-5" href="">Say Hello</a> -->
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="mb-2">My Office:</p>
+                    <h3>Room 901, BU Faculty of Computing & Data Sciences (CDS) </h3>
+                    <hr class="w-100">
+                    <!-- <p class="mb-2">Call me:</p>
+                    <h3 class="fw-bold">+012 345 6789</h3>
+                    <hr class="w-100"> -->
+                    <p class="mb-2">My Email:</p>
+                    <h3>gitika@bu.edu</h3>
+                    <hr class="w-100">
+                    <p class="mb-2">Follow me:</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-primary me-2" href="https://twitter.com/gitdroid"><i
+                                class="fab fa-twitter"></i></a>
+                        <!-- <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-facebook-f"></i></a> -->
+                        <!-- <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-youtube"></i></a> -->
+                        <a class="btn btn-square btn-primary me-2" href="https://www.linkedin.com/in/gitika-jha/"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom text-secondary" href="#">gitikajha.tech</a>, All Right Reserved.
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
